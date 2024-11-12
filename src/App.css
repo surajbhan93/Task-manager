@@ -1,0 +1,17 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+.heading {
+  font-size: 40px;  /* Larger font size for more impact */
+  font-weight: bold;  /* Bold text */
+  color: #90afa1;  /* White color */
+  background: linear-gradient(to right, #338be2, #007bff);  /* Gradient background */
+  -webkit-background-clip: text;  /* Clip the background to the text */
+  background-clip: text;
+  /* text-align: center;  Center align */
+  margin-bottom: 25px;  /* Space below */
+  padding: 10px;  /* Add padding for better spacing */
+  font-family: 'Poppins', sans-serif;  /* Use the imported Poppins font */
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  /* Stronger shadow effect */
+  letter-spacing: 2px;  /* Increased letter spacing */
+  text-transform: uppercase;  /* Uppercase text for a bold, modern look */
+}

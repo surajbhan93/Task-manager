@@ -1,0 +1,28 @@
+/* src/components/Dashboard.css */
+
+.filter-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-controls input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+  }
+  
+  .filter-controls select,
+  .filter-controls label {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .filter-controls input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  

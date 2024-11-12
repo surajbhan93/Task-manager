@@ -1,0 +1,54 @@
+/* Container to center the form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+  }
+  
+  /* Task Form Styling */
+  .task-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #338be2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 750px; /* Limit the width */
+  }
+  
+  /* Form Input Styles */
+  .form-input {
+    padding: 8px 12px;
+    border: 1px solid #9e3131;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 150px;
+  }
+  
+  /* Select Input Styles */
+  .form-select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  
+  /* Add Task Button Styles */
+  .add-task-btn {
+    padding: 8px 16px;
+    background-color: #70b1f7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #0056b3;
+  }
+  

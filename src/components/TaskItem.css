@@ -1,0 +1,31 @@
+/* src/components/TaskItem.css */
+.task-item {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  .task-item.completed {
+    background: #e0f7fa;
+    text-decoration: line-through;
+  }
+  
+  .task-item button {
+    margin-right: 1.5rem;
+    margin-bottom: .5rem;
+    padding:.5rem 1rem;
+    background-color: #3a7bd5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .task-item button:hover {
+    background-color: #2a5ba8;
+  }
+  
