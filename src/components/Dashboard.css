@@ -1,28 +1,71 @@
-/* src/components/Dashboard.css */
+/* Center the Dashboard and make it responsive */
+.min-h-screen {
+  background: linear-gradient(135deg, #1fb6ff, #009e9f);
+  min-height: 100vh;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.bg-white {
+  background: linear-gradient(135deg, #a0c1d1, #009e9f);
+    
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 .filter-controls {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
   justify-content: center;
-    margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-controls input[type="text"],
+.filter-controls select,
+.filter-controls label {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+/* Spinner for loading */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: #3a7bd5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
   }
-  
-  .filter-controls input[type="text"] {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    flex: 1;
-  }
-  
-  .filter-controls select,
-  .filter-controls label {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .filter-controls input[type="checkbox"] {
-    margin-right: 0.5rem;
-  }
-  
+}

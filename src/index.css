@@ -3,6 +3,7 @@
 @tailwind utilities;
 /* In src/index.css */
 body {
+  /* padding-top: 10%; */
   /* background-image: url('/public/list.png'); */
   background-size: cover;
   background-position: center;

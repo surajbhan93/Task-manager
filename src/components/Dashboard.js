@@ -1,5 +1,4 @@
-// src/components/Dashboard.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TaskList from './TaskList';
 import './Dashboard.css';
 
@@ -9,6 +8,14 @@ const Dashboard = ({ tasks, onUpdateTask, onDeleteTask }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [priorityFilter, setPriorityFilter] = useState('');
   const [showCompleted, setShowCompleted] = useState(false);
+  const [loading, setLoading] = useState(true); // Loading state
+
+  useEffect(() => {
+    // Simulate loading time
+    setTimeout(() => {
+      setLoading(false); // Set loading to false after data loads
+    }, 2000); // Adjust the time as needed
+  }, []);
 
   const filteredTasks = tasks
     .filter((task) =>
@@ -25,14 +32,25 @@ const Dashboard = ({ tasks, onUpdateTask, onDeleteTask }) => {
   );
   const completedTasks = filteredTasks.filter((task) => task.completed);
 
+  if (loading) {
+    // Show loading spinner if still loading
+    return (
+      <div className="loading-container">
+        <div className="spinner"></div>
+        <p>Loading Dashboard...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto">
         <header className="flex flex-col items-center mb-6">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Task Manager</h1>
-          <img src="/public/list.png" alt="Task Manager Logo" className="w-20 h-20" />
+          <img src="/list.png" alt="Task Manager Logo" className="w-20 h-20" />
         </header>
 
+        {/* Rest of the Dashboard components */}
         <div className="flex gap-4 mb-4">
           <input
             type="text"
