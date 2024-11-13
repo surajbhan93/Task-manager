@@ -1,3 +1,60 @@
+# Task Manager Application
+
+## Overview
+This Task Manager application allows users to manage their tasks efficiently. It provides a dashboard with sections for upcoming, overdue, and completed tasks. Users can add, edit, delete tasks, and filter them based on priority and completion status.
+
+## Core Features
+
+### 1. **Dashboard**:
+- Displays a list of tasks.
+- Sections for:
+  - Upcoming tasks
+  - Overdue tasks
+  - Completed tasks
+
+### 2. **Task Management**:
+- Users can **add**, **edit**, and **delete** tasks.
+- Each task includes:
+  - **Title**
+  - **Description**
+  - **Due Date**
+  - **Priority Level**
+
+### 3. **Priority Levels**:
+- Three priority levels:
+  - **High**
+  - **Medium**
+  - **Low**
+- Users can set and update the priority of each task.
+
+### 4. **Search and Filter**:
+- **Search** functionality to find tasks quickly by title or description.
+- **Filter** tasks based on:
+  - Priority level (High, Medium, Low)
+  - Completion status (Completed or Pending)
+
+---
+
+# Technical Requirements:
+## Frontend:
+- Use a lightweight frontend framework (e.g., Vanilla JavaScript, React, or Vue.js).
+- Implement a simple and clean user interface.
+## Local Storage:
+-Store task data locally using browser storage (localStorage or sessionStorage).
+
+
+## Installation
+
+### Prerequisites:
+- **Node.js** and **npm** must be installed on your system.
+- Clone the repository:
+  ```bash
+  git clone https://github.com/yourusername/task-manager.git
+  cd task-manager
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
