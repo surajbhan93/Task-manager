@@ -53,6 +53,12 @@ This Task Manager application allows users to manage their tasks efficiently. It
   cd task-manager
 
 
+#Picture:
+![Screenshot 2024-11-13 100008](https://github.com/user-attachments/assets/1e5fa24b-cddf-4673-b6bc-4f438b5cd395)
+
+![Screenshot 2024-11-13 100016](https://github.com/user-attachments/assets/f4dfe9f7-86fa-4c66-b13a-886f0dcd8df3)
+
+![Screenshot 2024-11-13 100030](https://github.com/user-attachments/assets/719c48b7-ed4f-456c-aaf9-db4cc8518490)
 
 
 # Getting Started with Create React App
